@@ -1,0 +1,25 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+.sidebar__main {
+    padding: $content-font;
+    .category-list {
+        list-style: $content-displaynone;
+        padding: $content-zero;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include media-max-width($desktop-size) {
+        padding: $content-zero;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: $max-pixel;
+        height: $max-pixel;
+        border: $content-displaynone;
+    }
+}
+

@@ -1,0 +1,25 @@
+@import '../../scss//mixins';
+@import '../../scss//variables';
+
+.menu-sidebar {
+    position: static;
+}
+
+.menu-sidebar {
+    width: 40%;
+    margin-left: $content-zero;
+    height: $max-pixel;
+    background-color: darkgray;
+}
+
+#side-drawer {
+    width: $max-pixel;
+    height: $max-pixel;
+    position: fixed;
+    top: 40px;
+
+    @include media-min-width ($desktop-size) {
+        display: $content-displaynone;
+    }
+
+}

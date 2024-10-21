@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+.main-header {
+    background-color: rgb(15, 15, 15);
+    height: 40px;
+
+    button {
+        height: $max-pixel;
+        background-color: black;
+        border: $content-displaynone;
+    }
+
+    div {
+        width: 35px;
+        height: 14%;
+        background-color: aliceblue;
+        margin-bottom: 5px;
+    }
+
+    @include media-min-width($desktop-size) {
+        display: $content-displaynone;
+    }
+}
+

@@ -1,0 +1,29 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+.article-lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: $content-zero;
+
+    @include media-max-width ($desktop-size) {
+        padding-left: $content-zero;
+    }
+}
+
+.nextpage-button {
+    display: flex;
+    justify-content: end;
+
+    button {
+        border: $content-displaynone;
+        margin: 9px;
+        background: white;
+        display: flex;
+    }
+
+    button:hover {
+        background-color: rgb(39, 37, 37);
+        color: rgb(250, 241, 241);
+        border-radius: $content-font;
+    }
+}

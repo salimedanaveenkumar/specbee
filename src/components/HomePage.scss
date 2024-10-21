@@ -1,0 +1,21 @@
+@import '../scss/_mixins.scss';
+@import '../scss/variables';
+
+.homePage {
+    display: flex;
+    @include media-max-width ($desktop-size) {
+        padding: $content-font;
+    }
+}
+
+.sideDrawer-desktop {
+    width: 25%;
+    height: 50%;
+    border: 1px solid rgb(215, 205, 205);
+    vertical-align: top;
+    border-radius: $content-font;
+
+    @include media-max-width ($desktop-size) {
+        display: $content-displaynone
+    }
+}
