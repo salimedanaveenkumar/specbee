@@ -10,6 +10,11 @@
     margin-left: $content-zero;
     height: $max-pixel;
     background-color: darkgray;
+
+    @include media-max-width ($mobile-mediaPixel) {
+        width: 70%;
+    }
+
 }
 
 #side-drawer {

@@ -15,12 +15,11 @@ export default function HomePage() {
         <>
             <Header onOpenSideDrawer={handleOpenSideBar} />
             <Provider store={store}>
-                {isSideBarOpen && <SideDrawer />}
+                {isSideBarOpen && <SideDrawer isSideBarOpen = {isSideBarOpen}/>}
                 <div className="homePage">
                     <div className="sideDrawer-desktop">
                         <Filters />
                     </div>
-
                     <ArticalsSection />
 
                 </div>

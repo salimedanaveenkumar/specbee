@@ -4,7 +4,7 @@
 npm install
 
 
-#RUNNING THE APP
+##RUNNING THE APP
 
 Navigate to the project root directory 
 

@@ -5,11 +5,12 @@ import './SideBar.scss'
 
 type SideDrawerType = {
     children : ReactNode, 
-    className : string
+    className : string,
+    isSideBarOpen : boolean
 
 }
-export default function sideDraw({children, className} : SideDrawerType) {
-    return createPortal(<dialog open className={className}>
+export default function sideDraw({children, className, isSideBarOpen} : SideDrawerType) {
+    return createPortal(<dialog open={isSideBarOpen} className={className}>
                     {children}
             </dialog>, document.getElementById("side-drawer")!
         )
