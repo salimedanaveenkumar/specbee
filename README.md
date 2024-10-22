@@ -1,11 +1,11 @@
-#INSTALLATION 
+#INSTALLING THE DEPENDENCIES
 
 ```bash
 npm install
 ```
 
 
-##RUNNING THE APP
+#RUNNING THE APP LOCALLY
 
 Navigate to the project root directory 
 
